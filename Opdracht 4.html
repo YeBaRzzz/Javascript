@@ -1,0 +1,38 @@
+<!doctype HTML> 
+<HTML> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>JavaScript Cursus</title> 
+    </head>
+    <style> 
+        .tekst {
+            color: grey;
+            font-size: larger;
+            font-family: Helvetica;
+        }
+    </style>
+    <body> 
+        <div> 
+            <h4 class="inleiding"> Dit is een inleiding van hoofdstuk 1....... </h4> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid eos animi deserunt aut accusamus ad laboriosam qui, 
+                accusantium, inventore dolor natus est quis voluptas neque voluptatibus repudiandae non quod sequi? </p>
+        </div> 
+        <div> 
+            <h4 class="inleiding"> Dit is een inleiding van hoofdstuk ....... </h4> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid eos animi deserunt aut accusamus ad laboriosam qui, 
+                accusantium, inventore dolor natus est quis voluptas neque voluptatibus repudiandae non quod sequi? </p> 
+        </div>
+        <script> 
+            var parafs = document.getElementsByTagName("p"); 
+            for(var i = 0; i < parafs.length; i++){ 
+                parafs[i].classList.add("tekst"); 
+            }
+            var intro = document.getElementsByClassName("tekst"); 
+            for(var i = 0; i < intro.length; i++){
+                intro[i].innerHTML+="--Einde--"; 
+            } 
+        </script> 
+    </body> 
+</HTML>
